@@ -96,11 +96,11 @@ function FirstCompo() {
 
                         let ema = e.Email;
                         let TF = false;
+                        
                         for (let i = 0; i < ema.length; i++) {
                            
                             if(ema[i] == "@"){
                                 TF = true;
-
                                 return(
                                     <tr>
                                     <td>{e.Name}</td>
@@ -109,20 +109,21 @@ function FirstCompo() {
                                 </tr>
                                 );
                             }
-
-                            // else{
-                            //     return(
-                            //         <tr>
-                            //         <td>{e.Name}</td>
-                            //         <td>{TF? e.Email : "Invalid Email "}</td>
-                            //         <td>{e.Message}</td>
-                            //     </tr>
-
-                            //     );
-                            // }
-
                         };
-                        
+
+                        for (let i = 0; i < ema.length; i++) {
+                           
+                            if(ema[i] != "@"){
+                                TF = true;
+                                return(
+                                    <tr>
+                                    <td>{e.Name}</td>
+                                    <td>Invalid Email</td>
+                                    <td>{e.Message}</td>
+                                </tr>
+                                );
+                            }
+                        };
                        
                     })
                 }
