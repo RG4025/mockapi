@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import Accordian from './MachineTestExercise/Accordian';
 import StyledAccordion from './MachineTestExercise/StyledAccordion';
+import MUIAccordion from './MachineTestExercise/MUIAccordion';
 function App() {
   return (
    <>
@@ -16,8 +17,11 @@ function App() {
 
     {/* <FirstCompo/> */}
 
-    <Accordian/>
-    <StyledAccordion/>
+    {/* <Accordian/> */}
+    {/* <StyledAccordion/> */}
+
+    <MUIAccordion/>
+
    
    </>
   );
