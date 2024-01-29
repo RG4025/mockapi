@@ -11,6 +11,7 @@ import Pokemon from './PokemonApp/Pokemon';
 import IceCream from './IceCream';
 import { Calculate } from '@mui/icons-material';
 import Calculator from './Calculator';
+import CalculatorReact from './CalculatorReact';
 function App() {
   return (
    <>
@@ -30,7 +31,9 @@ function App() {
 
     {/* <IceCream/> */}
 
-    <Calculator/>
+    {/* <Calculator/> */}
+
+    <CalculatorReact/>
 
 
    
