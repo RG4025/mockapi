@@ -12,6 +12,8 @@ import IceCream from './IceCream';
 import { Calculate } from '@mui/icons-material';
 import Calculator from './Calculator';
 import CalculatorReact from './CalculatorReact';
+import Array from './Array';
+import Main from './CustomHook/Main';
 function App() {
   return (
    <>
@@ -33,9 +35,11 @@ function App() {
 
     {/* <Calculator/> */}
 
-    <CalculatorReact/>
+    {/* <CalculatorReact/> */}
 
+    {/* <Array/> */}
 
+    <Main/>
    
    </>
   );

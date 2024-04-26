@@ -43,8 +43,6 @@ function FirstCompo() {
             console.log(err);
         })
     }
-
-
   return (
     <>
       <div className="pt-5">
@@ -91,6 +89,7 @@ function FirstCompo() {
                 </tr>
               </thead>
               <tbody>
+                
                 {
                     data.map((e)=>{
 
